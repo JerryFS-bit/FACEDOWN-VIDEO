@@ -10,4 +10,4 @@ python3 FaceDownVideo.py
 ~~~
 
 
-[IMAGE NOT FOUND](/image/image-facedown-video.png)
+![Texto alternativo](/image/image-facedown-video.png)
