@@ -1,4 +1,4 @@
-tqdm
 requests
 pyfiglet 
 colorama
+tqdm
