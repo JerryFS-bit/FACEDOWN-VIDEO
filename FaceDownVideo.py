@@ -2,6 +2,7 @@
 #ORIGINAL AUTHOR OF THE CODE; AnonymousFromGeorgia
 #MODIFIED BY: JerryFS-bit
 
+import os
 import re
 import requests
 import pyfiglet 
@@ -10,9 +11,13 @@ from colorama import Fore, Back, init
 from datetime import datetime
 from signal import signal, SIGINT
 from tqdm import tqdm
-from os import system
+from os import system, name
 
-system('cls')
+def Cscreen():
+    if name == "posix":
+        system("clear")
+    else:
+        system("cls")
 
 def information_author():
     print(Fore.WHITE + "YouTube   : https://youtube.com/AnonymousFromGeorgia" + Fore.RESET)
@@ -27,6 +32,7 @@ def keyboardInterruptHandler(signal, frame):
 signal(SIGINT, keyboardInterruptHandler)  
 fb = pyfiglet.figlet_format("FaceDownVideo") 
 
+Cscreen()
 print(Fore.BLUE + fb + Fore.RESET)
 print(Fore.LIGHTYELLOW_EX + "ORIGINAL CREATOR: AnonymousFromGeorgia " + Fore.RESET)
 print("--------------------------------------------------------------------")
