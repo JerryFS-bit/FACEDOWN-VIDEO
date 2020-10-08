@@ -26,14 +26,14 @@ def information_author():
     print(Fore.LIGHTBLUE_EX + "Twitter   : https://twitter.com/anonimaluri" + Fore.RESET)
 
 def keyboardInterruptHandler(signal, frame):
-    print(Fore.YELLOW + "\nThe program has been shut down !!".format(signal))
+    print(Fore.YELLOW + "\nThe program has been shut down !!".format(signal) + Fore.RESET)
     exit(0)
 
 signal(SIGINT, keyboardInterruptHandler)  
 fb = pyfiglet.figlet_format("FaceDownVideo") 
 
 Cscreen()
-print(Fore.BLUE + fb + Fore.RESET)
+print(Fore.CYAN + fb + Fore.RESET)
 print(Fore.LIGHTYELLOW_EX + "ORIGINAL CREATOR: AnonymousFromGeorgia " + Fore.RESET)
 print("--------------------------------------------------------------------")
 information_author()
